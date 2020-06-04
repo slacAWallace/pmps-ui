@@ -62,6 +62,7 @@ class PMPS(Display):
                 widget = PyDMEmbeddedDisplay(parent=ff_container)
                 widget.macros = json.dumps(macros)
                 widget.filename = template
+                widget.disconnectWhenHidden = False
                 ff_container.layout().addWidget(widget)
                 count += 1
         verticalSpacer = QtWidgets.QSpacerItem(20, 40,
