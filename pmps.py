@@ -1,75 +1,70 @@
 import yaml
-import json
-import itertools
+import webbrowser
 from os import path
-from qtpy import QtWidgets
+from qtpy import QtCore
 from pydm import Display
-from pydm.widgets import PyDMEmbeddedDisplay
 
 
 class PMPS(Display):
     def __init__(self, parent=None, args=None, macros=None):
-        super(PMPS, self).__init__(parent=parent, args=args, macros=macros)
         # Read definitions from db file.
-        cfg = path.join(path.dirname(path.realpath(__file__)), "config.yml")
-        self.config = {}
-        with open(cfg, 'r') as f:
-            self.config = yaml.safe_load(f)
+        c_file = path.join(path.dirname(path.realpath(__file__)), "config.yml")
+        config = {}
+        with open(c_file, 'r') as f:
+            config = yaml.safe_load(f)
+
+        macros_from_config = ['line_arbiter_prefix', 'undulator_kicker_rate_pv']
+
+        if not macros:
+            macros = {}
+        for m in macros_from_config:
+            if m in macros:
+                continue
+            macros[m] = config.get(m)
+
+        super(PMPS, self).__init__(parent=parent, args=args, macros=macros)
+
+        self.config = config
+
         self.setup_ui()
 
     def setup_ui(self):
+        dash_url = self.config.get('dashboard_url')
+        if dash_url:
+            self.ui.webbrowser.load(QtCore.QUrl(dash_url))
+
+        self.ui.btn_open_browser.clicked.connect(self.handle_open_browser)
+
         self.setup_tabs()
-        splitter = self.findChild(QtWidgets.QSplitter, "main_splitter")
-        splitter.setStretchFactor(0, 0)
-        splitter.setStretchFactor(1, 1)
 
     def setup_tabs(self):
         # We will do crazy things at this screen... avoid painting
         self.setUpdatesEnabled(False)
 
-        self.setup_fastfaults()
+        # self.setup_fastfaults()
+        self.setup_preemptive_requests()
 
         # We are done... re-enable painting
         self.setUpdatesEnabled(True)
 
     def setup_fastfaults(self):
-        ffs = self.config.get('fastfaults')
-        if not ffs:
-            return
-        ff_container = self.findChild(QtWidgets.QWidget, "fastfaults_content")
-        if ff_container is None:
-            return
-        count = 0
-        for ff in ffs:
-            prefix = ff.get('prefix')
-            ffo_start = ff.get('ffo_start')
-            ffo_end = ff.get('ffo_end')
-            ff_start = ff.get('ff_start')
-            ff_end = ff.get('ff_end')
+        from fast_faults import FastFaults
 
-            ffos_zfill = len(str(ffo_end)) + 1
-            ffs_zfill = len(str(ff_end)) + 1
+        tab = self.ui.tb_fast_faults
+        ff_widget = FastFaults(macros=self.config)
+        tab.layout().addWidget(ff_widget)
 
-            entries = itertools.product(
-                range(ffo_start, ffo_end+1),
-                range(ff_start, ff_end+1)
-            )
-            template = 'templates/fastfaults_entry.ui'
-            for _ffo, _ff in entries:
-                s_ffo = str(_ffo).zfill(ffos_zfill)
-                s_ff = str(_ff).zfill(ffs_zfill)
-                macros = dict(index=count, P=prefix, FFO=s_ffo, FF=s_ff)
-                widget = PyDMEmbeddedDisplay(parent=ff_container)
-                widget.macros = json.dumps(macros)
-                widget.filename = template
-                widget.disconnectWhenHidden = False
-                ff_container.layout().addWidget(widget)
-                count += 1
-        verticalSpacer = QtWidgets.QSpacerItem(20, 40,
-                                               QtWidgets.QSizePolicy.Minimum,
-                                               QtWidgets.QSizePolicy.Expanding)
-        ff_container.layout().addItem(verticalSpacer)
-        print(f'Added {count} fast faults')
+    def setup_preemptive_requests(self):
+        from preemptive_requests import PreemptiveRequests
+
+        tab = self.ui.tb_preemptive_requests
+        pr_widget = PreemptiveRequests(macros=self.config)
+        tab.layout().addWidget(pr_widget)
+
+    def handle_open_browser(self):
+        url = self.ui.webbrowser.url().toString()
+        if url:
+            webbrowser.open(url, new=2, autoraise=True)
 
     def ui_filename(self):
         return 'main.ui'

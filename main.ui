@@ -6,18 +6,27 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1302</width>
-    <height>865</height>
+    <width>1062</width>
+    <height>829</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
   </property>
   <property name="windowTitle">
    <string>PMPS - Diagnostics</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,1">
+  <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,0,1">
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
       <spacer name="horizontalSpacer">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
@@ -31,6 +40,9 @@
      </item>
      <item>
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
        <property name="minimumSize">
         <size>
          <width>200</width>
@@ -72,587 +84,838 @@
     </layout>
    </item>
    <item>
-    <widget class="QSplitter" name="main_splitter">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-     <property name="opaqueResize">
-      <bool>true</bool>
-     </property>
-     <property name="handleWidth">
-      <number>6</number>
-     </property>
-     <property name="childrenCollapsible">
-      <bool>false</bool>
-     </property>
-     <widget class="QWidget" name="layoutWidget">
-      <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,1">
-       <item>
-        <widget class="QFrame" name="frame">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="autoFillBackground">
-          <bool>true</bool>
-         </property>
-         <property name="frameShape">
-          <enum>QFrame::Panel</enum>
-         </property>
-         <property name="frameShadow">
-          <enum>QFrame::Raised</enum>
-         </property>
-         <property name="lineWidth">
-          <number>3</number>
-         </property>
-         <layout class="QVBoxLayout" name="verticalLayout_3">
-          <item>
-           <layout class="QGridLayout" name="gridLayout">
-            <item row="1" column="2">
-             <widget class="QLabel" name="label_4">
-              <property name="font">
-               <font>
-                <weight>75</weight>
-                <bold>true</bold>
-               </font>
-              </property>
-              <property name="text">
-               <string>Requested</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignCenter</set>
-              </property>
-             </widget>
-            </item>
-            <item row="4" column="2">
-             <widget class="PyDMLabel" name="PyDMLabel_6">
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="showUnits" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="channel" stdset="0">
-               <string>ca://${LINE_ARBITER_PREFIX}RequestedBP:Attenuation_RBV</string>
-              </property>
-             </widget>
-            </item>
-            <item row="8" column="0">
-             <widget class="QLabel" name="label_10">
-              <property name="text">
-               <string>Current</string>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="0">
-             <widget class="QLabel" name="label_6">
-              <property name="font">
-               <font>
-                <weight>75</weight>
-                <bold>true</bold>
-               </font>
-              </property>
-              <property name="text">
-               <string>Rate</string>
-              </property>
-             </widget>
-            </item>
-            <item row="9" column="1" colspan="2">
-             <widget class="PyDMByteIndicator" name="PyDMByteIndicator_3">
-              <property name="maximumSize">
-               <size>
-                <width>16777215</width>
-                <height>16</height>
-               </size>
-              </property>
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="channel" stdset="0">
-               <string>ca://${LINE_ARBITER_PREFIX}RequestedBP:PhotonEnergyRanges_RBV</string>
-              </property>
-              <property name="onColor" stdset="0">
-               <color>
-                <red>21</red>
-                <green>165</green>
-                <blue>62</blue>
-               </color>
-              </property>
-              <property name="orientation" stdset="0">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="showLabels" stdset="0">
-               <bool>false</bool>
-              </property>
-              <property name="bigEndian" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="circles" stdset="0">
-               <bool>false</bool>
-              </property>
-              <property name="numBits" stdset="0">
-               <number>16</number>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="1">
-             <widget class="QLabel" name="label_3">
-              <property name="font">
-               <font>
-                <weight>75</weight>
-                <bold>true</bold>
-               </font>
-              </property>
-              <property name="text">
-               <string>Current</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignCenter</set>
-              </property>
-             </widget>
-            </item>
-            <item row="3" column="1">
-             <widget class="PyDMLabel" name="PyDMLabel_2">
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="showUnits" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="channel" stdset="0">
-               <string>ca://${LINE_ARBITER_PREFIX}CurrentBP:PulseEnergy_RBV</string>
-              </property>
-             </widget>
-            </item>
-            <item row="10" column="0">
-             <widget class="QLabel" name="label_12">
-              <property name="text">
-               <string>Residual</string>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="2">
-             <widget class="PyDMLabel" name="PyDMLabel_4">
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="showUnits" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="channel" stdset="0">
-               <string>ca://${LINE_ARBITER_PREFIX}RequestedBP:Rate_RBV</string>
-              </property>
-             </widget>
-            </item>
-            <item row="4" column="1">
-             <widget class="PyDMLabel" name="PyDMLabel_3">
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="showUnits" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="channel" stdset="0">
-               <string>ca://${LINE_ARBITER_PREFIX}CurrentBP:Attenuation_RBV</string>
-              </property>
-             </widget>
-            </item>
-            <item row="3" column="0">
-             <widget class="QLabel" name="label_5">
-              <property name="font">
-               <font>
-                <weight>75</weight>
-                <bold>true</bold>
-               </font>
-              </property>
-              <property name="text">
-               <string>Pulse Energy</string>
-              </property>
-             </widget>
-            </item>
-            <item row="8" column="1" colspan="2">
-             <widget class="PyDMByteIndicator" name="PyDMByteIndicator_2">
-              <property name="maximumSize">
-               <size>
-                <width>16777215</width>
-                <height>16</height>
-               </size>
-              </property>
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="channel" stdset="0">
-               <string>ca://${LINE_ARBITER_PREFIX}CurrentBP:PhotonEnergyRanges_RBV</string>
-              </property>
-              <property name="onColor" stdset="0">
-               <color>
-                <red>10</red>
-                <green>90</green>
-                <blue>179</blue>
-               </color>
-              </property>
-              <property name="orientation" stdset="0">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="showLabels" stdset="0">
-               <bool>false</bool>
-              </property>
-              <property name="bigEndian" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="circles" stdset="0">
-               <bool>false</bool>
-              </property>
-              <property name="numBits" stdset="0">
-               <number>16</number>
-              </property>
-             </widget>
-            </item>
-            <item row="6" column="0">
-             <widget class="QLabel" name="label_8">
-              <property name="font">
-               <font>
-                <weight>75</weight>
-                <bold>true</bold>
-               </font>
-              </property>
-              <property name="text">
-               <string>eV</string>
-              </property>
-             </widget>
-            </item>
-            <item row="3" column="2">
-             <widget class="PyDMLabel" name="PyDMLabel_5">
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="showUnits" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="channel" stdset="0">
-               <string>ca://${LINE_ARBITER_PREFIX}RequestedBP:PulseEnergy_RBV</string>
-              </property>
-             </widget>
-            </item>
-            <item row="10" column="1" colspan="2">
-             <widget class="PyDMByteIndicator" name="PyDMByteIndicator_4">
-              <property name="maximumSize">
-               <size>
-                <width>16777215</width>
-                <height>16</height>
-               </size>
-              </property>
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="channel" stdset="0">
-               <string>calc://{&quot;name&quot;:&quot;evResidual&quot;, &quot;channels&quot;:{&quot;evCurrent&quot;:&quot;ca://${LINE_ARBITER_PREFIX}CurrentBP:PhotonEnergyRanges_RBV&quot;,&quot;evRequested&quot;:&quot;ca://${LINE_ARBITER_PREFIX}RequestedBP:PhotonEnergyRanges_RBV&quot;},&quot;expr&quot;:&quot;(evRequested ^ evCurrent) &amp; evCurrent&quot;}</string>
-              </property>
-              <property name="onColor" stdset="0">
-               <color>
-                <red>252</red>
-                <green>0</green>
-                <blue>6</blue>
-               </color>
-              </property>
-              <property name="orientation" stdset="0">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="showLabels" stdset="0">
-               <bool>false</bool>
-              </property>
-              <property name="bigEndian" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="circles" stdset="0">
-               <bool>false</bool>
-              </property>
-              <property name="numBits" stdset="0">
-               <number>16</number>
-              </property>
-             </widget>
-            </item>
-            <item row="4" column="0">
-             <widget class="QLabel" name="label_7">
-              <property name="font">
-               <font>
-                <weight>75</weight>
-                <bold>true</bold>
-               </font>
-              </property>
-              <property name="text">
-               <string>Attenuation</string>
-              </property>
-             </widget>
-            </item>
-            <item row="9" column="0">
-             <widget class="QLabel" name="label_9">
-              <property name="text">
-               <string>Requested</string>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="1">
-             <widget class="PyDMLabel" name="PyDMLabel">
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="showUnits" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="channel" stdset="0">
-               <string>ca://${LINE_ARBITER_PREFIX}CurrentBP:Rate_RBV</string>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="0" colspan="3">
-             <widget class="QLabel" name="label_2">
-              <property name="font">
-               <font>
-                <weight>75</weight>
-                <bold>true</bold>
-               </font>
-              </property>
-              <property name="text">
-               <string>Requested Beam Parameters</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignCenter</set>
-              </property>
-             </widget>
-            </item>
-            <item row="5" column="0" colspan="3">
-             <widget class="Line" name="line">
-              <property name="frameShadow">
-               <enum>QFrame::Raised</enum>
-              </property>
-              <property name="lineWidth">
-               <number>2</number>
-              </property>
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-             </widget>
-            </item>
-            <item row="7" column="0" colspan="3">
-             <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>400</width>
-                <height>200</height>
-               </size>
-              </property>
-              <property name="toolTip">
-               <string/>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item>
-           <spacer name="verticalSpacer_2">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
+    <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,1">
+     <item>
+      <widget class="QFrame" name="frame">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>500</height>
+        </size>
+       </property>
+       <property name="autoFillBackground">
+        <bool>true</bool>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <property name="lineWidth">
+        <number>3</number>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="1" column="2">
+           <widget class="QLabel" name="label_4">
+            <property name="enabled">
+             <bool>true</bool>
             </property>
-            <property name="sizeHint" stdset="0">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Requested</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="2">
+           <widget class="PyDMLabel" name="PyDMLabel_6">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="showUnits" stdset="0">
+             <bool>true</bool>
+            </property>
+            <property name="channel" stdset="0">
+             <string>ca://${line_arbiter_prefix}RequestedBP:Attenuation_RBV</string>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="0">
+           <widget class="QLabel" name="label_10">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="text">
+             <string>Current</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_6">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Rate</string>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="1" colspan="2">
+           <widget class="PyDMByteIndicator" name="PyDMByteIndicator_3">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
              <size>
-              <width>20</width>
-              <height>40</height>
+              <width>16777215</width>
+              <height>16</height>
              </size>
             </property>
-           </spacer>
-          </item>
-         </layout>
-        </widget>
-       </item>
-       <item>
-        <widget class="QFrame" name="frame_2">
-         <property name="autoFillBackground">
-          <bool>true</bool>
-         </property>
-         <property name="frameShape">
-          <enum>QFrame::Panel</enum>
-         </property>
-         <property name="frameShadow">
-          <enum>QFrame::Raised</enum>
-         </property>
-         <property name="lineWidth">
-          <number>3</number>
-         </property>
-         <layout class="QVBoxLayout" name="verticalLayout" stretch="0,1">
-          <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_3">
-            <property name="spacing">
-             <number>0</number>
+            <property name="toolTip">
+             <string/>
             </property>
-            <item>
-             <widget class="QLabel" name="label">
-              <property name="font">
-               <font>
-                <weight>75</weight>
-                <bold>true</bold>
-               </font>
-              </property>
-              <property name="text">
-               <string>Grafana Log Display</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="PyDMShellCommand" name="PyDMShellCommand">
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="text">
-               <string>Open in new Window</string>
-              </property>
-              <property name="showIcon" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="titles" stdset="0">
-               <stringlist/>
-              </property>
-             </widget>
-            </item>
-           </layout>
+            <property name="channel" stdset="0">
+             <string>ca://${line_arbiter_prefix}RequestedBP:PhotonEnergyRanges_RBV</string>
+            </property>
+            <property name="onColor" stdset="0">
+             <color>
+              <red>21</red>
+              <green>165</green>
+              <blue>62</blue>
+             </color>
+            </property>
+            <property name="orientation" stdset="0">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="showLabels" stdset="0">
+             <bool>false</bool>
+            </property>
+            <property name="bigEndian" stdset="0">
+             <bool>true</bool>
+            </property>
+            <property name="circles" stdset="0">
+             <bool>false</bool>
+            </property>
+            <property name="numBits" stdset="0">
+             <number>16</number>
+            </property>
+           </widget>
           </item>
-          <item>
-           <widget class="QWebEngineView" name="webEngineView">
-            <property name="url">
-             <url>
-              <string>https://pswebkdc.slac.stanford.edu/login?RT=XthvRic4kqOFROOmX3J wki1eOuPfzKOEJ1B5NSCQ32uUkfTzh0m2ahsT%2F5JXQfahNWfjHgqF4pX Lc5v8qS2m1PssPRW jlwhvQ JZQYYj%2FowFh r7rpMQHURf3SQ6NWC%2Ff98%2FVgjqyEhr%2FOFYUDQ9iqGkVn3WJLu5y25U08SCqXvXYsWZx6qP9yM6Tuql3fD01otH8sOB62nWghQUNJle3ZEUlWJkRzvBWD%2FFL4WX0QwJj1IH59pedcoJONMtES TAWTfhdQzBIBwfR7qPwNhevN%2FFfx7LKzQbep1YVvIczqWEa5yjuUsap39hA7g3hfBaAvygBY5bTJmQ16u6z3iFEbk%3D;ST=XtflTSiP2UyhQtIrN2 gII3S8sNVrgQfh6d%2FxY8c%2FVDzdi8JNhSpoy72WFCfPcyhMag0PSsR6R2ppE%2FTH5tv57X5oe7pGfTYqVY2fUU2eqwZq vknqKLH nOux14aJ2AAhwlxJXiafnvCMfmhJ9 0tbkR79lWLeTEcPQBPf%2FjHeoJXX7eHEAaGx3PPBkBgXtBP Z fV4 uuQbsVkofnyGaaRE04%3D;test_cookie=1</string>
-             </url>
+          <item row="1" column="1">
+           <widget class="QLabel" name="label_3">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Current</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="PyDMLabel" name="PyDMLabel_2">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="showUnits" stdset="0">
+             <bool>true</bool>
+            </property>
+            <property name="channel" stdset="0">
+             <string>ca://${line_arbiter_prefix}CurrentBP:PulseEnergy_RBV</string>
+            </property>
+           </widget>
+          </item>
+          <item row="10" column="0">
+           <widget class="QLabel" name="label_12">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="text">
+             <string>Residual</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="PyDMLabel" name="PyDMLabel_4">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="showUnits" stdset="0">
+             <bool>true</bool>
+            </property>
+            <property name="channel" stdset="0">
+             <string>ca://${line_arbiter_prefix}RequestedBP:Rate_RBV</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="PyDMLabel" name="PyDMLabel_3">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="showUnits" stdset="0">
+             <bool>true</bool>
+            </property>
+            <property name="channel" stdset="0">
+             <string>ca://${line_arbiter_prefix}CurrentBP:Attenuation_RBV</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_5">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Pulse Energy</string>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="1" colspan="2">
+           <widget class="PyDMByteIndicator" name="PyDMByteIndicator_2">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="channel" stdset="0">
+             <string>ca://${line_arbiter_prefix}CurrentBP:PhotonEnergyRanges_RBV</string>
+            </property>
+            <property name="onColor" stdset="0">
+             <color>
+              <red>10</red>
+              <green>90</green>
+              <blue>179</blue>
+             </color>
+            </property>
+            <property name="orientation" stdset="0">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="showLabels" stdset="0">
+             <bool>false</bool>
+            </property>
+            <property name="bigEndian" stdset="0">
+             <bool>true</bool>
+            </property>
+            <property name="circles" stdset="0">
+             <bool>false</bool>
+            </property>
+            <property name="numBits" stdset="0">
+             <number>16</number>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <widget class="QLabel" name="label_8">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>eV</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="2">
+           <widget class="PyDMLabel" name="PyDMLabel_5">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="showUnits" stdset="0">
+             <bool>true</bool>
+            </property>
+            <property name="channel" stdset="0">
+             <string>ca://${line_arbiter_prefix}RequestedBP:PulseEnergy_RBV</string>
+            </property>
+           </widget>
+          </item>
+          <item row="10" column="1" colspan="2">
+           <widget class="PyDMByteIndicator" name="PyDMByteIndicator_4">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="channel" stdset="0">
+             <string>calc://{&quot;name&quot;:&quot;evResidual&quot;, &quot;channels&quot;:{&quot;evCurrent&quot;:&quot;ca://${line_arbiter_prefix}CurrentBP:PhotonEnergyRanges_RBV&quot;,&quot;evRequested&quot;:&quot;ca://${line_arbiter_prefix}RequestedBP:PhotonEnergyRanges_RBV&quot;},&quot;expr&quot;:&quot;(evRequested ^ evCurrent) &amp; evCurrent&quot;}</string>
+            </property>
+            <property name="onColor" stdset="0">
+             <color>
+              <red>252</red>
+              <green>0</green>
+              <blue>6</blue>
+             </color>
+            </property>
+            <property name="orientation" stdset="0">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="showLabels" stdset="0">
+             <bool>false</bool>
+            </property>
+            <property name="bigEndian" stdset="0">
+             <bool>true</bool>
+            </property>
+            <property name="circles" stdset="0">
+             <bool>false</bool>
+            </property>
+            <property name="numBits" stdset="0">
+             <number>16</number>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_7">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Attenuation</string>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="0">
+           <widget class="QLabel" name="label_9">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="text">
+             <string>Requested</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="PyDMLabel" name="PyDMLabel">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="showUnits" stdset="0">
+             <bool>true</bool>
+            </property>
+            <property name="channel" stdset="0">
+             <string>ca://${line_arbiter_prefix}CurrentBP:Rate_RBV</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0" colspan="3">
+           <widget class="QLabel" name="label_2">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Requested Beam Parameters</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0" colspan="3">
+           <widget class="Line" name="line">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <property name="lineWidth">
+             <number>2</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="0" colspan="3">
+           <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>400</width>
+              <height>200</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="curves">
+             <stringlist>
+              <string>{&quot;y_channel&quot;: &quot;ca://${line_arbiter_prefix}spectrogram&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#3fbaf3&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+             </stringlist>
             </property>
            </widget>
           </item>
          </layout>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="PyDMTabWidget" name="tabWidget">
-      <property name="autoFillBackground">
-       <bool>false</bool>
-      </property>
-      <property name="currentIndex">
-       <number>0</number>
-      </property>
-      <widget class="QWidget" name="tb_fast_faults">
-       <attribute name="title">
-        <string>Fast Faults</string>
-       </attribute>
-       <layout class="QVBoxLayout" name="verticalLayout_5">
-        <item>
-         <widget class="QGroupBox" name="groupBox">
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>100</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <weight>75</weight>
-            <bold>true</bold>
-           </font>
-          </property>
-          <property name="title">
-           <string>Filters:</string>
-          </property>
-         </widget>
         </item>
         <item>
-         <widget class="QScrollArea" name="scrollArea">
-          <property name="frameShadow">
-           <enum>QFrame::Raised</enum>
-          </property>
-          <property name="widgetResizable">
+         <spacer name="verticalSpacer_2">
+          <property name="enabled">
            <bool>true</bool>
           </property>
-          <property name="alignment">
-           <set>Qt::AlignCenter</set>
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
           </property>
-          <widget class="QWidget" name="fastfaults_content">
-           <property name="geometry">
-            <rect>
-             <x>0</x>
-             <y>0</y>
-             <width>1260</width>
-             <height>100</height>
-            </rect>
-           </property>
-           <layout class="QVBoxLayout" name="verticalLayout_4">
-            <item>
-             <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>16777215</width>
-                <height>45</height>
-               </size>
-              </property>
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="frameShape">
-               <enum>QFrame::NoFrame</enum>
-              </property>
-              <property name="lineWidth">
-               <number>0</number>
-              </property>
-              <property name="filename" stdset="0">
-               <string>templates/fastfaults_header.ui</string>
-              </property>
-              <property name="disconnectWhenHidden" stdset="0">
-               <bool>false</bool>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="frame_2">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>500</height>
+        </size>
+       </property>
+       <property name="autoFillBackground">
+        <bool>true</bool>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <property name="lineWidth">
+        <number>3</number>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout" stretch="0,1">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Grafana Log Display</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_open_browser">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>200</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(214, 214, 214);</string>
+            </property>
+            <property name="text">
+             <string>Open in a new Window...</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QWebEngineView" name="webbrowser">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="url">
+           <url>
+            <string>about:blank</string>
+           </url>
+          </property>
          </widget>
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="tb_preemptive_requests">
-       <attribute name="title">
-        <string>Preemptive Requests</string>
-       </attribute>
-      </widget>
-      <widget class="QWidget" name="tb_arbiter_outputs">
-       <attribute name="title">
-        <string>Arbiter Outputs</string>
-       </attribute>
-      </widget>
-      <widget class="QWidget" name="tb_ev_calculations">
-       <attribute name="title">
-        <string>eV Calculations</string>
-       </attribute>
-      </widget>
-      <widget class="QWidget" name="tb_pmps_stats">
-       <attribute name="title">
-        <string>PMPS Stats</string>
-       </attribute>
-      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="PyDMTabWidget" name="tab_arbiter_outputs">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="tb_fast_faults">
+      <attribute name="title">
+       <string>Fast Faults</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_4"/>
+     </widget>
+     <widget class="QWidget" name="tb_preemptive_requests">
+      <attribute name="title">
+       <string>Preemptive Requests</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_6"/>
+     </widget>
+     <widget class="QWidget" name="tb_arbiter_outputs">
+      <attribute name="title">
+       <string>Arbiter Outputs</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="lineWidth">
+          <number>0</number>
+         </property>
+         <property name="filename" stdset="0">
+          <string>arbiter_outputs.ui</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tb_ev_calculations">
+      <attribute name="title">
+       <string>eV Calculations</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="tb_pmps_stats">
+      <attribute name="title">
+       <string>PMPS Stats</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="tb_line_beam_param_ctrl">
+      <attribute name="title">
+       <string>Line Beam Parameters Control</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_7">
+       <item>
+        <layout class="QFormLayout" name="formLayout">
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_11">
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Attenuation:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="PyDMLineEdit" name="PyDMLineEdit">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>200</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${line_arbiter_prefix}BeamParamCntl:ReqBP:Attenuation</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_13">
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Photon Energy Ranges:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>200</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${line_arbiter_prefix}BeamParamCntl:ReqBP:PhotonEnergyRanges</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_14">
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Pulse Energy:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="PyDMLineEdit" name="PyDMLineEdit_3">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>200</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${line_arbiter_prefix}BeamParamCntl:ReqBP:PulseEnergy</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_15">
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Rate:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="PyDMLineEdit" name="PyDMLineEdit_4">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>200</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${line_arbiter_prefix}BeamParamCntl:ReqBP:Rate</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="PyDMPushButton" name="PyDMPushButton">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>200</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(148, 255, 85);</string>
+           </property>
+           <property name="text">
+            <string>Apply</string>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://${line_arbiter_prefix}BeamParamCntl:ReqBP:Apply</string>
+           </property>
+           <property name="showConfirmDialog" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="pressValue" stdset="0">
+            <string>1</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
      </widget>
     </widget>
    </item>
@@ -685,9 +948,14 @@
    <header>pydm.widgets.embedded_display</header>
   </customwidget>
   <customwidget>
-   <class>PyDMShellCommand</class>
+   <class>PyDMLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>pydm.widgets.line_edit</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMPushButton</class>
    <extends>QPushButton</extends>
-   <header>pydm.widgets.shell_command</header>
+   <header>pydm.widgets.pushbutton</header>
   </customwidget>
   <customwidget>
    <class>QWebEngineView</class>

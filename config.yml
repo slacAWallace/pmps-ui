@@ -1,5 +1,8 @@
-line_arbiter:
-  - prefix: "PMPS:LFE:"
+line_arbiter_prefix: "PMPS:LFE:"
+undulator_kicker_rate_pv: "BSY0:MP01:BYKIK_RATE"
+
+dashboard_url: "https://pswww.slac.stanford.edu/ctl/grafana/d/PQBzCnmMz/l-pmps-events?orgId=1&refresh=10s&kiosk"
+
 fastfaults:
   - prefix: "PMPS:LFE:"
     ffo_start: 1
@@ -8,7 +11,7 @@ fastfaults:
     ff_end: 50
 
 preemptive_requests:
-  - prefix: ""
+  - prefix: "PMPS:LFE:"
     arbiter_instance: "Arbiter:01"
     assertion_pool_start: 0
     assertion_pool_end: 20

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>186</width>
+    <height>202</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_3">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>calc://{&quot;name&quot;:&quot;arbiter_outputs&quot;, &quot;channels&quot;:{&quot;beamclass&quot;:&quot;ca://${line_arbiter_prefix}BeamClassOutputs:BeamClassChannel_RBV&quot;, &quot;clts&quot;: &quot;ca://${line_arbiter_prefix}CuRateOutputs:CTLSChannel_RBV&quot;}, &quot;expr&quot;: &quot;(clts &lt;&lt; 8) | beamclass&quot;}</string>
+       </property>
+       <property name="orientation" stdset="0">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="numBits" stdset="0">
+        <number>11</number>
+       </property>
+       <property name="labels" stdset="0">
+        <stringlist>
+         <string>Channel 01 - BC_1HZ</string>
+         <string>Channel 02 - BC_10HZ</string>
+         <string>Channel 03 - BC_FULL</string>
+         <string>Channel 04 - BC_FULL</string>
+         <string>Channel 05 - BC_FULL</string>
+         <string>Channel 06 - BC_FULL</string>
+         <string>Channel 07 - BC_FULL</string>
+         <string>Channel 08 - BC_FULL</string>
+         <string>Channel 09 - RATE_1</string>
+         <string>Channel 10 - RATE_10</string>
+         <string>Channel 11 - RATE_120</string>
+        </stringlist>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMByteIndicator</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.byte</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
