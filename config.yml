@@ -1,5 +1,5 @@
 line_arbiter_prefix: "PMPS:LFE:"
-undulator_kicker_rate_pv: "BSY0:MP01:BYKIK_RATE"
+undulator_kicker_rate_pv: "IOC:BSY0:MP01:BYKIK_RATE"
 
 dashboard_url: "https://pswww.slac.stanford.edu/ctl/grafana/d/PQBzCnmMz/l-pmps-events?orgId=1&refresh=10s&kiosk"
 
