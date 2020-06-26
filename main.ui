@@ -59,7 +59,7 @@
         <string/>
        </property>
        <property name="channel" stdset="0">
-        <string>calc://{&quot;name&quot;:&quot;beam_permitted&quot;, &quot;channels&quot;: {&quot;kicker_rate&quot;:&quot;ca://${undulator_kicker_rate_pv}&quot;,&quot;attenuation&quot;:&quot;ca://${line_arbiter_prefix}CurrentBP:Attenuation_RBV&quot;},&quot;expr&quot;: &quot;1 if kicker_rate == 6 and attenuation == 0 else 0&quot;}</string>
+        <string>calc://{&quot;name&quot;:&quot;beam_permitted&quot;, &quot;channels&quot;: {&quot;kicker_rate&quot;:&quot;ca://${undulator_kicker_rate_pv}&quot;,&quot;attenuation&quot;:&quot;ca://${line_arbiter_prefix}CurrentBP:Attenuation_RBV&quot;},&quot;expr&quot;: &quot;1 if kicker_rate == 6 and attenuation &lt; 1 else 0&quot;}</string>
        </property>
        <property name="offColor" stdset="0">
         <color>
