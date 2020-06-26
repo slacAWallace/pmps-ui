@@ -62,7 +62,7 @@
       <string>Item: ${index}</string>
      </property>
      <property name="channel" stdset="0">
-      <string>calc://{&quot;name&quot;:&quot;${P}_${FFO}_${FF}_info_devname&quot;, &quot;channels&quot;:{&quot;info&quot;:&quot;ca://${P}FFO:${FFO}:FF:${FF}:InfoString_RBV&quot;}, &quot;expr&quot;:&quot;epics_string(info).split(';')[3]&quot;}</string>
+      <string>calc://{&quot;name&quot;:&quot;${P}_${FFO}_${FF}_info_devname&quot;, &quot;channels&quot;:{&quot;info&quot;:&quot;ca://${P}FFO:${FFO}:FF:${FF}:Info:InfoString_RBV&quot;}, &quot;expr&quot;:&quot;epics_string(info).split(';')[3]&quot;}</string>
      </property>
     </widget>
    </item>
@@ -87,7 +87,7 @@
       <string/>
      </property>
      <property name="channel" stdset="0">
-      <string>calc://{&quot;name&quot;:&quot;${P}_${FFO}_${FF}_info_typecode&quot;, &quot;channels&quot;:{&quot;info&quot;:&quot;ca://${P}FFO:${FFO}:FF:${FF}:InfoString_RBV&quot;}, &quot;expr&quot;:&quot;int(epics_string(info).split(';')[2])&quot;}</string>
+      <string>calc://{&quot;name&quot;:&quot;${P}_${FFO}_${FF}_info_typecode&quot;, &quot;channels&quot;:{&quot;info&quot;:&quot;ca://${P}FFO:${FFO}:FF:${FF}:Info:InfoString_RBV&quot;}, &quot;expr&quot;:&quot;int(epics_string(info).split(';')[2])&quot;}</string>
      </property>
      <property name="displayFormat" stdset="0">
       <enum>PyDMLabel::Hex</enum>
@@ -121,7 +121,7 @@
       <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
-      <string>calc://{&quot;name&quot;:&quot;${P}_${FFO}_${FF}_info_spath&quot;, &quot;channels&quot;:{&quot;info&quot;:&quot;ca://${P}FFO:${FFO}:FF:${FF}:InfoString_RBV&quot;}, &quot;expr&quot;:&quot;epics_string(info).split(';')[0]&quot;}</string>
+      <string>calc://{&quot;name&quot;:&quot;${P}_${FFO}_${FF}_info_spath&quot;, &quot;channels&quot;:{&quot;info&quot;:&quot;ca://${P}FFO:${FFO}:FF:${FF}:Info:InfoString_RBV&quot;}, &quot;expr&quot;:&quot;epics_string(info).split(';')[0]&quot;}</string>
      </property>
     </widget>
    </item>
@@ -146,7 +146,7 @@
       <string/>
      </property>
      <property name="channel" stdset="0">
-      <string>calc://{&quot;name&quot;:&quot;${P}_${FFO}_${FF}_info_desc&quot;, &quot;channels&quot;:{&quot;info&quot;:&quot;ca://${P}FFO:${FFO}:FF:${FF}:InfoString_RBV&quot;}, &quot;expr&quot;:&quot;epics_string(info).split(';')[4]&quot;}</string>
+      <string>calc://{&quot;name&quot;:&quot;${P}_${FFO}_${FF}_info_desc&quot;, &quot;channels&quot;:{&quot;info&quot;:&quot;ca://${P}FFO:${FFO}:FF:${FF}:Info:InfoString_RBV&quot;}, &quot;expr&quot;:&quot;epics_string(info).split(';')[4]&quot;}</string>
      </property>
     </widget>
    </item>
@@ -171,7 +171,7 @@
       <string/>
      </property>
      <property name="channel" stdset="0">
-      <string>calc://{&quot;name&quot;:&quot;${P}_${FFO}_${FF}_info_inuse&quot;, &quot;channels&quot;:{&quot;info&quot;:&quot;ca://${P}FFO:${FFO}:FF:${FF}:InfoString_RBV&quot;}, &quot;expr&quot;:&quot;1 if epics_string(info).split(';')[1] == 'TRUE' else 0&quot;}</string>
+      <string>calc://{&quot;name&quot;:&quot;${P}_${FFO}_${FF}_info_inuse&quot;, &quot;channels&quot;:{&quot;info&quot;:&quot;ca://${P}FFO:${FFO}:FF:${FF}:Info:InfoString_RBV&quot;}, &quot;expr&quot;:&quot;1 if epics_string(info).split(';')[1] == 'TRUE' else 0&quot;}</string>
      </property>
      <property name="showLabels" stdset="0">
       <bool>false</bool>

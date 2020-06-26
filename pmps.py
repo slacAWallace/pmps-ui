@@ -1,7 +1,7 @@
 import yaml
 import webbrowser
 from os import path
-from qtpy import QtCore
+from qtpy import QtCore, QtWidgets
 from pydm import Display
 
 
@@ -31,7 +31,8 @@ class PMPS(Display):
     def setup_ui(self):
         dash_url = self.config.get('dashboard_url')
         if dash_url:
-            self.ui.webbrowser.load(QtCore.QUrl(dash_url))
+            pass
+            #self.ui.webbrowser.load(QtCore.QUrl(dash_url))
 
         self.ui.btn_open_browser.clicked.connect(self.handle_open_browser)
 
@@ -41,7 +42,7 @@ class PMPS(Display):
         # We will do crazy things at this screen... avoid painting
         self.setUpdatesEnabled(False)
 
-        # self.setup_fastfaults()
+        self.setup_fastfaults()
         self.setup_preemptive_requests()
 
         # We are done... re-enable painting
@@ -62,7 +63,8 @@ class PMPS(Display):
         tab.layout().addWidget(pr_widget)
 
     def handle_open_browser(self):
-        url = self.ui.webbrowser.url().toString()
+        #url = self.ui.webbrowser.url().toString()
+        url = self.config.get('dashboard_url')
         if url:
             webbrowser.open(url, new=2, autoraise=True)
 

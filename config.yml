@@ -6,9 +6,22 @@ dashboard_url: "https://pswww.slac.stanford.edu/ctl/grafana/d/PQBzCnmMz/l-pmps-e
 fastfaults:
   - prefix: "PMPS:LFE:"
     ffo_start: 1
+    ffo_end: 1
+    ff_start: 1
+    ff_end: 50
+
+  - prefix: "PLC:LFE:VAC:"
+    ffo_start: 1
+    ffo_end: 1
+    ff_start: 1
+    ff_end: 50
+
+  - prefix: "PLC:LFE:GEM:"
+    ffo_start: 1
     ffo_end: 2
     ff_start: 1
     ff_end: 50
+ 
 
 preemptive_requests:
   - prefix: "PMPS:LFE:"
