@@ -62,7 +62,7 @@
       <string>Item: ${index}</string>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${P}FFO:${FFO}:FF:${FF}:Info:DevName</string>
+      <string>ca://${P}FFO:${FFO}:FF:${FF}:Info:DevName_RBV</string>
      </property>
     </widget>
    </item>
@@ -87,7 +87,7 @@
       <string/>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${P}FFO:${FFO}:FF:${FF}:Info:TypeCode</string>
+      <string>ca://${P}FFO:${FFO}:FF:${FF}:Info:TypeCode_RBV</string>
      </property>
      <property name="displayFormat" stdset="0">
       <enum>PyDMLabel::Hex</enum>
@@ -124,7 +124,7 @@
       <set>Qt::TextSelectableByMouse</set>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${P}FFO:${FFO}:FF:${FF}:Info:Path</string>
+      <string>ca://${P}FFO:${FFO}:FF:${FF}:Info:Path_RBV</string>
      </property>
     </widget>
    </item>
@@ -149,7 +149,7 @@
       <string/>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${P}FFO:${FFO}:FF:${FF}:Info:Desc</string>
+      <string>ca://${P}FFO:${FFO}:FF:${FF}:Info:Desc_RBV</string>
      </property>
     </widget>
    </item>
@@ -174,7 +174,7 @@
       <string/>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${P}FFO:${FFO}:FF:${FF}:Info:InUse</string>
+      <string>ca://${P}FFO:${FFO}:FF:${FF}:Info:InUse_RBV</string>
      </property>
      <property name="showLabels" stdset="0">
       <bool>false</bool>

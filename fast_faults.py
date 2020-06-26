@@ -12,6 +12,9 @@ class VisibilityEmbedded(PyDMEmbeddedDisplay):
     def update_filter(self, filters):
         self.rules = "[]"
 
+        if not filters:
+            self.setVisible(True)
+            return
         channels = []
         conditions = []
         for idx, filter in enumerate(filters):
@@ -88,7 +91,7 @@ class FastFaults(Display):
 
     def update_filters(self):
         options = [
-            {'name': 'inuse', 'channel': 'ca://${P}FFO:${FFO}:FF:${FF}:Info:InUse"}'},
+            {'name': 'inuse', 'channel': 'ca://${P}FFO:${FFO}:FF:${FF}:Info:InUse_RBV"}'},
             {'name': 'ok', 'channel': 'ca://${P}FFO:${FFO}:FF:${FF}:OK_RBV'},
             {'name': 'beampermitted', 'channel': 'ca://${P}FFO:${FFO}:FF:${FF}:BeamPermitted_RBV'},
             {'name': 'bypassed', 'channel': 'ca://ca://${P}FFO:${FFO}:FF:${FF}:Ovrd:Active_RBV'}
