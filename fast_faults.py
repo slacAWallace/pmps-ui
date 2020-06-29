@@ -90,14 +90,17 @@ class FastFaults(Display):
         return 'fast_faults.ui'
 
     def update_filters(self):
+        default_options = [
+            {'name': 'inuse', 'channel': 'ca://${P}FFO:${FFO}:FF:${FF}:Info:InUse_RBV', 'condition': 1}
+        ]
         options = [
-            {'name': 'inuse', 'channel': 'ca://${P}FFO:${FFO}:FF:${FF}:Info:InUse_RBV'},
             {'name': 'ok', 'channel': 'ca://${P}FFO:${FFO}:FF:${FF}:OK_RBV'},
             {'name': 'beampermitted', 'channel': 'ca://${P}FFO:${FFO}:FF:${FF}:BeamPermitted_RBV'},
             {'name': 'bypassed', 'channel': 'ca://ca://${P}FFO:${FFO}:FF:${FF}:Ovrd:Active_RBV'}
-
         ]
         filters = []
+        for opt in default_options:
+            filters.append(opt)
         for opt in options:
             gb = self.findChild(QtWidgets.QGroupBox, f"ff_filter_gb_{opt['name']}")
             cb = self.findChild(QtWidgets.QComboBox, f"ff_filter_cb_{opt['name']}")
