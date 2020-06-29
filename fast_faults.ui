@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Fast Faults</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,1">
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0,1">
    <property name="spacing">
     <number>2</number>
    </property>
@@ -303,6 +303,37 @@
     </widget>
    </item>
    <item>
+    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="lineWidth">
+      <number>0</number>
+     </property>
+     <property name="filename" stdset="0">
+      <string>templates/fastfaults_header.ui</string>
+     </property>
+     <property name="disconnectWhenHidden" stdset="0">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
     <widget class="QScrollArea" name="scrollArea">
      <property name="frameShadow">
       <enum>QFrame::Raised</enum>
@@ -319,41 +350,16 @@
         <x>0</x>
         <y>0</y>
         <width>1468</width>
-        <height>169</height>
+        <height>122</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_5">
-       <item>
-        <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>16777215</width>
-           <height>45</height>
-          </size>
-         </property>
-         <property name="toolTip">
-          <string/>
-         </property>
-         <property name="frameShape">
-          <enum>QFrame::NoFrame</enum>
-         </property>
-         <property name="lineWidth">
-          <number>0</number>
-         </property>
-         <property name="filename" stdset="0">
-          <string>templates/fastfaults_header.ui</string>
-         </property>
-         <property name="disconnectWhenHidden" stdset="0">
-          <bool>false</bool>
-         </property>
-        </widget>
-       </item>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
       </layout>
      </widget>
     </widget>
