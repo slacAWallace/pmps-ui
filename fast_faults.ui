@@ -65,53 +65,6 @@
        </spacer>
       </item>
       <item>
-       <widget class="QGroupBox" name="ff_filter_gb_inuse">
-        <property name="title">
-         <string>Filter By: In Use</string>
-        </property>
-        <property name="checkable">
-         <bool>true</bool>
-        </property>
-        <property name="checked">
-         <bool>false</bool>
-        </property>
-        <layout class="QHBoxLayout" name="horizontalLayout_6">
-         <property name="spacing">
-          <number>0</number>
-         </property>
-         <property name="leftMargin">
-          <number>0</number>
-         </property>
-         <property name="topMargin">
-          <number>0</number>
-         </property>
-         <property name="rightMargin">
-          <number>0</number>
-         </property>
-         <property name="bottomMargin">
-          <number>0</number>
-         </property>
-         <item>
-          <widget class="QComboBox" name="ff_filter_cb_inuse">
-           <property name="currentIndex">
-            <number>1</number>
-           </property>
-           <item>
-            <property name="text">
-             <string>False</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>True</string>
-            </property>
-           </item>
-          </widget>
-         </item>
-        </layout>
-       </widget>
-      </item>
-      <item>
        <widget class="QGroupBox" name="ff_filter_gb_ok">
         <property name="title">
          <string>Filter By: OK Status</string>
