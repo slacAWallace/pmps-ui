@@ -43,6 +43,7 @@ class PMPS(Display):
 
         self.setup_fastfaults()
         self.setup_preemptive_requests()
+        self.setup_arbiter_outputs()
 
         # We are done... re-enable painting
         self.setUpdatesEnabled(True)
@@ -60,6 +61,13 @@ class PMPS(Display):
         tab = self.ui.tb_preemptive_requests
         pr_widget = PreemptiveRequests(macros=self.config)
         tab.layout().addWidget(pr_widget)
+
+    def setup_arbiter_outputs(self):
+        from arbiter_outputs import ArbiterOutputs
+
+        tab = self.ui.tb_arbiter_outputs
+        ao_widget = ArbiterOutputs(macros=self.config)
+        tab.layout().addWidget(ao_widget)
 
     def handle_open_browser(self):
         url = self.ui.webbrowser.url().toString()
