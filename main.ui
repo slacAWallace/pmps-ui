@@ -546,6 +546,9 @@
             </property>
             <item>
              <widget class="PyDMLabel" name="PyDMLabel_7">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
               <property name="font">
                <font>
                 <pointsize>9</pointsize>
@@ -567,6 +570,9 @@
             </item>
             <item>
              <widget class="PyDMLabel" name="PyDMLabel_11">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
               <property name="font">
                <font>
                 <pointsize>9</pointsize>
@@ -588,6 +594,9 @@
             </item>
             <item>
              <widget class="PyDMLabel" name="PyDMLabel_10">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
               <property name="font">
                <font>
                 <pointsize>9</pointsize>
@@ -609,6 +618,9 @@
             </item>
             <item>
              <widget class="PyDMLabel" name="PyDMLabel_9">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
               <property name="font">
                <font>
                 <pointsize>9</pointsize>
@@ -630,6 +642,9 @@
             </item>
             <item>
              <widget class="PyDMLabel" name="PyDMLabel_8">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
               <property name="font">
                <font>
                 <pointsize>9</pointsize>
@@ -651,6 +666,9 @@
             </item>
             <item>
              <widget class="PyDMLabel" name="PyDMLabel_13">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
               <property name="font">
                <font>
                 <pointsize>9</pointsize>
@@ -672,6 +690,9 @@
             </item>
             <item>
              <widget class="PyDMLabel" name="PyDMLabel_12">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
               <property name="font">
                <font>
                 <pointsize>9</pointsize>
@@ -693,6 +714,9 @@
             </item>
             <item>
              <widget class="PyDMLabel" name="PyDMLabel_15">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
               <property name="font">
                <font>
                 <pointsize>9</pointsize>
@@ -714,6 +738,9 @@
             </item>
             <item>
              <widget class="PyDMLabel" name="PyDMLabel_17">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
               <property name="font">
                <font>
                 <pointsize>9</pointsize>
@@ -735,6 +762,9 @@
             </item>
             <item>
              <widget class="PyDMLabel" name="PyDMLabel_16">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
               <property name="font">
                <font>
                 <pointsize>9</pointsize>
@@ -756,6 +786,9 @@
             </item>
             <item>
              <widget class="PyDMLabel" name="PyDMLabel_19">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
               <property name="font">
                <font>
                 <pointsize>9</pointsize>
@@ -777,6 +810,9 @@
             </item>
             <item>
              <widget class="PyDMLabel" name="PyDMLabel_21">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
               <property name="font">
                <font>
                 <pointsize>9</pointsize>
@@ -798,6 +834,9 @@
             </item>
             <item>
              <widget class="PyDMLabel" name="PyDMLabel_20">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
               <property name="font">
                <font>
                 <pointsize>9</pointsize>
@@ -819,6 +858,9 @@
             </item>
             <item>
              <widget class="PyDMLabel" name="PyDMLabel_18">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
               <property name="font">
                <font>
                 <pointsize>9</pointsize>
@@ -840,6 +882,9 @@
             </item>
             <item>
              <widget class="PyDMLabel" name="PyDMLabel_14">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
               <property name="font">
                <font>
                 <pointsize>9</pointsize>
@@ -861,6 +906,9 @@
             </item>
             <item>
              <widget class="PyDMLabel" name="PyDMLabel_22">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
               <property name="font">
                <font>
                 <pointsize>9</pointsize>
