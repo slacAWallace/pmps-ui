@@ -41,10 +41,6 @@ class ArbiterOutputs(Display):
                 widget.disconnectWhenHidden = False
                 outs_container.layout().addWidget(widget)
                 count += 1
-        vertical_spacer = QtWidgets.QSpacerItem(20, 40,
-                                                QtWidgets.QSizePolicy.Preferred,
-                                                QtWidgets.QSizePolicy.MinimumExpanding)
-        outs_container.layout().addItem(vertical_spacer)
         print(f'Added {count} arbiter outputs')
 
     def ui_filename(self):

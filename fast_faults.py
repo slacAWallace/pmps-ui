@@ -103,8 +103,8 @@ class FastFaults(Display):
                 ff_container.layout().addWidget(widget)
                 count += 1
         vertical_spacer = QtWidgets.QSpacerItem(20, 40,
-                                               QtWidgets.QSizePolicy.Preferred,
-                                               QtWidgets.QSizePolicy.MinimumExpanding)
+                                                QtWidgets.QSizePolicy.Preferred,
+                                                QtWidgets.QSizePolicy.MinimumExpanding)
         ff_container.layout().addItem(vertical_spacer)
         self.update_filters()
         print(f'Added {count} fast faults')

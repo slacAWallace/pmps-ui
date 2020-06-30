@@ -131,6 +131,9 @@
    </item>
    <item>
     <widget class="QFrame" name="frame">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
      <property name="frameShape">
       <enum>QFrame::NoFrame</enum>
      </property>
@@ -155,6 +158,9 @@
         <property name="toolTip">
          <string/>
         </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
         <property name="filename" stdset="0">
          <string>templates/arbiter_outputs_header.ui</string>
         </property>
@@ -174,12 +180,6 @@
            <height>163</height>
           </rect>
          </property>
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
          <layout class="QVBoxLayout" name="verticalLayout_3">
           <property name="spacing">
            <number>0</number>
@@ -188,10 +188,10 @@
            <number>0</number>
           </property>
           <property name="topMargin">
-           <number>2</number>
+           <number>0</number>
           </property>
           <property name="rightMargin">
-           <number>2</number>
+           <number>0</number>
           </property>
           <property name="bottomMargin">
            <number>0</number>
