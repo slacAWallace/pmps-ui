@@ -29,6 +29,8 @@ class VisibilityEmbedded(PyDMEmbeddedDisplay):
 
     def connection_changed(self, status):
         self._connected = status
+        if not status:
+            self.setVisible(False)
 
     @QtCore.Slot(list)
     def update_filter(self, filters):
