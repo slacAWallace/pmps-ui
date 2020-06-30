@@ -12,7 +12,7 @@ fastfaults:
 
   - prefix: "PLC:LFE:VAC:"
     ffo_start: 1
-    ffo_end: 1
+    ffo_end: 3
     ff_start: 1
     ff_end: 50
 
@@ -23,6 +23,12 @@ fastfaults:
     ff_end: 50
 
   - prefix: "PLC:LFE:MOTION:"
+    ffo_start: 1
+    ffo_end: 2
+    ff_start: 1
+    ff_end: 50
+
+  - prefix: "PLC:LFE:OPTICS:"
     ffo_start: 1
     ffo_end: 2
     ff_start: 1
