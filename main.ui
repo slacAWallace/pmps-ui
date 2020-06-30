@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1533</width>
-    <height>812</height>
+    <width>1520</width>
+    <height>744</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -1212,16 +1212,6 @@
        <string>Arbiter Outputs</string>
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_5"/>
-     </widget>
-     <widget class="QWidget" name="tb_ev_calculations">
-      <attribute name="title">
-       <string>eV Calculations</string>
-      </attribute>
-     </widget>
-     <widget class="QWidget" name="tb_pmps_stats">
-      <attribute name="title">
-       <string>PMPS Stats</string>
-      </attribute>
      </widget>
      <widget class="QWidget" name="tb_line_beam_param_ctrl">
       <attribute name="title">
