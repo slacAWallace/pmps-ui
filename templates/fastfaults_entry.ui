@@ -235,9 +235,6 @@
      <property name="channel" stdset="0">
       <string>ca://${P}FFO:${FFO}:FF:${FF}:Reset</string>
      </property>
-     <property name="showConfirmDialog" stdset="0">
-      <bool>true</bool>
-     </property>
      <property name="pressValue" stdset="0">
       <string>1</string>
      </property>
@@ -412,9 +409,6 @@ color: rgb(0, 0, 0);</string>
      <property name="channel" stdset="0">
       <string>ca://ca://${P}FFO:${FFO}:FF:${FF}:Ovrd:Activate</string>
      </property>
-     <property name="showConfirmDialog" stdset="0">
-      <bool>true</bool>
-     </property>
      <property name="pressValue" stdset="0">
       <string>1</string>
      </property>
@@ -462,9 +456,6 @@ color: rgb(255, 255, 255)</string>
      </property>
      <property name="channel" stdset="0">
       <string>ca://ca://${P}FFO:${FFO}:FF:${FF}:Ovrd:Deactivate</string>
-     </property>
-     <property name="showConfirmDialog" stdset="0">
-      <bool>true</bool>
      </property>
      <property name="pressValue" stdset="0">
       <string>1</string>
