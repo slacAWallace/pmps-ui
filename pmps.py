@@ -1,35 +1,78 @@
-import json
+import yaml
+import webbrowser
 from os import path
-
+from qtpy import QtCore
 from pydm import Display
 
 
 class PMPS(Display):
     def __init__(self, parent=None, args=None, macros=None):
-        super(PMPS, self).__init__(parent=parent, args=args)
         # Read definitions from db file.
-        db_path = path.join(path.dirname(path.realpath(__file__)), "db.json")
-        ffs = []
-        try:
-            with open(db_path, 'r') as f:
-                ffs = json.load(f)
-        except:
-            pass
+        c_file = path.join(path.dirname(path.realpath(__file__)), "config.yml")
+        config = {}
+        with open(c_file, 'r') as f:
+            config = yaml.safe_load(f)
 
-        data = []
-        for ff in ffs:
-            prefix = ff.get('P', '')
-            fid = ff.get('ID', '1')
-            start = int(ff.get('START', 1))
-            end = int(ff.get('END', 1))
-            padding = len(str(end))+1
-            for index in range(start, end+1):
-                entry = dict()
-                entry['P'] = prefix
-                entry['ID'] = fid
-                entry['INDEX'] = str(index).zfill(padding)
-                data.append(entry)
-        self.ui.repeater.data = data
+        macros_from_config = ['line_arbiter_prefix', 'undulator_kicker_rate_pv']
+
+        if not macros:
+            macros = {}
+        for m in macros_from_config:
+            if m in macros:
+                continue
+            macros[m] = config.get(m)
+
+        super(PMPS, self).__init__(parent=parent, args=args, macros=macros)
+
+        self.config = config
+
+        self.setup_ui()
+
+    def setup_ui(self):
+        dash_url = self.config.get('dashboard_url')
+        if dash_url:
+            self.ui.webbrowser.load(QtCore.QUrl(dash_url))
+
+        self.ui.btn_open_browser.clicked.connect(self.handle_open_browser)
+
+        self.setup_tabs()
+
+    def setup_tabs(self):
+        # We will do crazy things at this screen... avoid painting
+        self.setUpdatesEnabled(False)
+
+        self.setup_fastfaults()
+        self.setup_preemptive_requests()
+        self.setup_arbiter_outputs()
+
+        # We are done... re-enable painting
+        self.setUpdatesEnabled(True)
+
+    def setup_fastfaults(self):
+        from fast_faults import FastFaults
+
+        tab = self.ui.tb_fast_faults
+        ff_widget = FastFaults(macros=self.config)
+        tab.layout().addWidget(ff_widget)
+
+    def setup_preemptive_requests(self):
+        from preemptive_requests import PreemptiveRequests
+
+        tab = self.ui.tb_preemptive_requests
+        pr_widget = PreemptiveRequests(macros=self.config)
+        tab.layout().addWidget(pr_widget)
+
+    def setup_arbiter_outputs(self):
+        from arbiter_outputs import ArbiterOutputs
+
+        tab = self.ui.tb_arbiter_outputs
+        ao_widget = ArbiterOutputs(macros=self.config)
+        tab.layout().addWidget(ao_widget)
+
+    def handle_open_browser(self):
+        url = self.ui.webbrowser.url().toString()
+        if url:
+            webbrowser.open(url, new=2, autoraise=True)
 
     def ui_filename(self):
-        return 'pmps.ui'
+        return 'main.ui'

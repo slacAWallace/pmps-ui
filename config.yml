@@ -1,0 +1,42 @@
+line_arbiter_prefix: "PMPS:LFE:"
+undulator_kicker_rate_pv: "IOC:BSY0:MP01:BYKIK_RATE"
+
+dashboard_url: "http://ctl-logsrv01:3000/ctl/grafana/d/PQBzCnmMz/l-pmps-events?viewPanel=2&orgId=1&refresh=10s&kiosk"
+
+
+fastfaults:
+  - prefix: "PMPS:LFE:"
+    ffo_start: 1
+    ffo_end: 2
+    ff_start: 1
+    ff_end: 50
+
+  - prefix: "PLC:LFE:VAC:"
+    ffo_start: 1
+    ffo_end: 3
+    ff_start: 1
+    ff_end: 50
+
+  - prefix: "PLC:LFE:GEM:"
+    ffo_start: 1
+    ffo_end: 2
+    ff_start: 1
+    ff_end: 50
+
+  - prefix: "PLC:LFE:MOTION:"
+    ffo_start: 1
+    ffo_end: 2
+    ff_start: 1
+    ff_end: 50
+
+  - prefix: "PLC:LFE:OPTICS:"
+    ffo_start: 1
+    ffo_end: 2
+    ff_start: 1
+    ff_end: 50
+
+preemptive_requests:
+  - prefix: "PMPS:LFE:"
+    arbiter_instance: "Arbiter:01"
+    assertion_pool_start: 0
+    assertion_pool_end: 20
