@@ -1,12 +1,13 @@
 line_arbiter_prefix: "PMPS:LFE:"
 undulator_kicker_rate_pv: "IOC:BSY0:MP01:BYKIK_RATE"
 
-dashboard_url: "https://pswww.slac.stanford.edu/ctl/grafana/d/PQBzCnmMz/l-pmps-events?orgId=1&refresh=10s&kiosk"
+dashboard_url: "http://ctl-logsrv01:3000/ctl/grafana/d/PQBzCnmMz/l-pmps-events?viewPanel=2&orgId=1&refresh=10s&kiosk"
+
 
 fastfaults:
   - prefix: "PMPS:LFE:"
     ffo_start: 1
-    ffo_end: 1
+    ffo_end: 2
     ff_start: 1
     ff_end: 50
 
