@@ -39,54 +39,19 @@
       </spacer>
      </item>
      <item>
-      <widget class="PyDMByteIndicator" name="PyDMByteIndicator">
-       <property name="enabled">
-        <bool>false</bool>
+      <widget class="QLabel" name="label_16">
+       <property name="text">
+        <string>BYKIK Rate:</string>
        </property>
-       <property name="minimumSize">
-        <size>
-         <width>200</width>
-         <height>32</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>32</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="PyDMLabel" name="PyDMLabel_23">
        <property name="toolTip">
         <string/>
        </property>
        <property name="channel" stdset="0">
-        <string>calc://{&quot;name&quot;:&quot;beam_permitted&quot;, &quot;channels&quot;: {&quot;kicker_rate&quot;:&quot;ca://${undulator_kicker_rate_pv}&quot;,&quot;attenuation&quot;:&quot;ca://${line_arbiter_prefix}CurrentBP:Attenuation_RBV&quot;},&quot;expr&quot;: &quot;1 if kicker_rate == 6 and attenuation &lt; 1 else 0&quot;}</string>
-       </property>
-       <property name="offColor" stdset="0">
-        <color>
-         <red>227</red>
-         <green>71</green>
-         <blue>16</blue>
-        </color>
-       </property>
-       <property name="orientation" stdset="0">
-        <enum>Qt::Vertical</enum>
-       </property>
-       <property name="showLabels" stdset="0">
-        <bool>true</bool>
-       </property>
-       <property name="circles" stdset="0">
-        <bool>true</bool>
-       </property>
-       <property name="labels" stdset="0">
-        <stringlist>
-         <string>Beam [Permitted | Limited]</string>
-        </stringlist>
+        <string>ca://${undulator_kicker_rate_pv}</string>
        </property>
       </widget>
      </item>
