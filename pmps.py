@@ -7,16 +7,19 @@ from pydm import Display
 
 class PMPS(Display):
     def __init__(self, parent=None, args=None, macros=None):
+        if not macros:
+            macros = {}
+        # Fallback for old start without macros
+        config_name = macros.get('CFG', 'LFE')
         # Read definitions from db file.
-        c_file = path.join(path.dirname(path.realpath(__file__)), "config.yml")
+        c_file = path.join(path.dirname(path.realpath(__file__)),
+                           f"{config_name}_config.yml")
         config = {}
         with open(c_file, 'r') as f:
             config = yaml.safe_load(f)
 
         macros_from_config = ['line_arbiter_prefix', 'undulator_kicker_rate_pv']
 
-        if not macros:
-            macros = {}
         for m in macros_from_config:
             if m in macros:
                 continue
