@@ -139,7 +139,7 @@
       <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${P}${ARBITER}:AP:Entry:${POOL}:Attenuation_RBV</string>
+      <string>ca://${P}${ARBITER}:AP:Entry:${POOL}:Transmission_RBV</string>
      </property>
     </widget>
    </item>
