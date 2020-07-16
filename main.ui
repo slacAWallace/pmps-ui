@@ -442,10 +442,13 @@
                <string/>
               </property>
               <property name="styleSheet">
-               <string notr="true"/>
+               <string notr="true">border: 1px solid black;</string>
               </property>
               <property name="text">
                <string>25000</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
               </property>
               <property name="precisionFromPV" stdset="0">
                <bool>true</bool>
@@ -477,6 +480,9 @@
               <property name="text">
                <string>25000</string>
               </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+              </property>
               <property name="precisionFromPV" stdset="0">
                <bool>true</bool>
               </property>
@@ -506,6 +512,9 @@
               </property>
               <property name="text">
                <string>25000</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
               </property>
               <property name="precisionFromPV" stdset="0">
                <bool>true</bool>
@@ -537,6 +546,9 @@
               <property name="text">
                <string>25000</string>
               </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+              </property>
               <property name="precisionFromPV" stdset="0">
                <bool>true</bool>
               </property>
@@ -566,6 +578,9 @@
               </property>
               <property name="text">
                <string>25000</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
               </property>
               <property name="precisionFromPV" stdset="0">
                <bool>true</bool>
@@ -597,6 +612,9 @@
               <property name="text">
                <string>25000</string>
               </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+              </property>
               <property name="precisionFromPV" stdset="0">
                <bool>true</bool>
               </property>
@@ -626,6 +644,9 @@
               </property>
               <property name="text">
                <string>25000</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
               </property>
               <property name="precisionFromPV" stdset="0">
                <bool>true</bool>
@@ -657,6 +678,9 @@
               <property name="text">
                <string>25000</string>
               </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+              </property>
               <property name="precisionFromPV" stdset="0">
                <bool>true</bool>
               </property>
@@ -686,6 +710,9 @@
               </property>
               <property name="text">
                <string>25000</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
               </property>
               <property name="precisionFromPV" stdset="0">
                <bool>true</bool>
@@ -717,6 +744,9 @@
               <property name="text">
                <string>25000</string>
               </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+              </property>
               <property name="precisionFromPV" stdset="0">
                <bool>true</bool>
               </property>
@@ -746,6 +776,9 @@
               </property>
               <property name="text">
                <string>25000</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
               </property>
               <property name="precisionFromPV" stdset="0">
                <bool>true</bool>
@@ -777,6 +810,9 @@
               <property name="text">
                <string>25000</string>
               </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+              </property>
               <property name="precisionFromPV" stdset="0">
                <bool>true</bool>
               </property>
@@ -806,6 +842,9 @@
               </property>
               <property name="text">
                <string>25000</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
               </property>
               <property name="precisionFromPV" stdset="0">
                <bool>true</bool>
@@ -837,6 +876,9 @@
               <property name="text">
                <string>25000</string>
               </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+              </property>
               <property name="precisionFromPV" stdset="0">
                <bool>true</bool>
               </property>
@@ -867,6 +909,9 @@
               <property name="text">
                <string>25000</string>
               </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+              </property>
               <property name="precisionFromPV" stdset="0">
                <bool>true</bool>
               </property>
@@ -896,6 +941,9 @@
               </property>
               <property name="text">
                <string>25000</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
               </property>
               <property name="precisionFromPV" stdset="0">
                <bool>true</bool>
