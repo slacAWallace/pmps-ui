@@ -435,29 +435,21 @@
               </property>
               <property name="font">
                <font>
+                <family>Arial</family>
                 <pointsize>8</pointsize>
                </font>
               </property>
               <property name="toolTip">
                <string/>
               </property>
-              <property name="styleSheet">
-               <string notr="true">border: 1px solid black;</string>
-              </property>
               <property name="text">
                <string>25000</string>
               </property>
-              <property name="alignment">
-               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-              </property>
               <property name="precisionFromPV" stdset="0">
-               <bool>true</bool>
+               <bool>false</bool>
               </property>
               <property name="channel" stdset="0">
                <string>ca://${line_arbiter_prefix}eVRangeCnst_RBV.[15:15]</string>
-              </property>
-              <property name="displayFormat" stdset="0">
-               <enum>PyDMLabel::Decimal</enum>
               </property>
              </widget>
             </item>
@@ -468,29 +460,21 @@
               </property>
               <property name="font">
                <font>
+                <family>Arial</family>
                 <pointsize>8</pointsize>
                </font>
               </property>
               <property name="toolTip">
                <string/>
               </property>
-              <property name="styleSheet">
-               <string notr="true">border: 1px solid black;</string>
-              </property>
               <property name="text">
                <string>25000</string>
               </property>
-              <property name="alignment">
-               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-              </property>
               <property name="precisionFromPV" stdset="0">
-               <bool>true</bool>
+               <bool>false</bool>
               </property>
               <property name="channel" stdset="0">
                <string>ca://${line_arbiter_prefix}eVRangeCnst_RBV.[14:14]</string>
-              </property>
-              <property name="displayFormat" stdset="0">
-               <enum>PyDMLabel::Decimal</enum>
               </property>
              </widget>
             </item>
@@ -501,29 +485,21 @@
               </property>
               <property name="font">
                <font>
+                <family>Arial</family>
                 <pointsize>8</pointsize>
                </font>
               </property>
               <property name="toolTip">
                <string/>
               </property>
-              <property name="styleSheet">
-               <string notr="true">border: 1px solid black;</string>
-              </property>
               <property name="text">
                <string>25000</string>
               </property>
-              <property name="alignment">
-               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-              </property>
               <property name="precisionFromPV" stdset="0">
-               <bool>true</bool>
+               <bool>false</bool>
               </property>
               <property name="channel" stdset="0">
                <string>ca://${line_arbiter_prefix}eVRangeCnst_RBV.[13:13]</string>
-              </property>
-              <property name="displayFormat" stdset="0">
-               <enum>PyDMLabel::Decimal</enum>
               </property>
              </widget>
             </item>
@@ -534,29 +510,21 @@
               </property>
               <property name="font">
                <font>
+                <family>Arial</family>
                 <pointsize>8</pointsize>
                </font>
               </property>
               <property name="toolTip">
                <string/>
               </property>
-              <property name="styleSheet">
-               <string notr="true">border: 1px solid black;</string>
-              </property>
               <property name="text">
                <string>25000</string>
               </property>
-              <property name="alignment">
-               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-              </property>
               <property name="precisionFromPV" stdset="0">
-               <bool>true</bool>
+               <bool>false</bool>
               </property>
               <property name="channel" stdset="0">
                <string>ca://${line_arbiter_prefix}eVRangeCnst_RBV.[12:12]</string>
-              </property>
-              <property name="displayFormat" stdset="0">
-               <enum>PyDMLabel::Decimal</enum>
               </property>
              </widget>
             </item>
@@ -567,29 +535,21 @@
               </property>
               <property name="font">
                <font>
+                <family>Arial</family>
                 <pointsize>8</pointsize>
                </font>
               </property>
               <property name="toolTip">
                <string/>
               </property>
-              <property name="styleSheet">
-               <string notr="true">border: 1px solid black;</string>
-              </property>
               <property name="text">
                <string>25000</string>
               </property>
-              <property name="alignment">
-               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-              </property>
               <property name="precisionFromPV" stdset="0">
-               <bool>true</bool>
+               <bool>false</bool>
               </property>
               <property name="channel" stdset="0">
                <string>ca://${line_arbiter_prefix}eVRangeCnst_RBV.[11:11]</string>
-              </property>
-              <property name="displayFormat" stdset="0">
-               <enum>PyDMLabel::Decimal</enum>
               </property>
              </widget>
             </item>
@@ -600,29 +560,21 @@
               </property>
               <property name="font">
                <font>
+                <family>Arial</family>
                 <pointsize>8</pointsize>
                </font>
               </property>
               <property name="toolTip">
                <string/>
               </property>
-              <property name="styleSheet">
-               <string notr="true">border: 1px solid black;</string>
-              </property>
               <property name="text">
                <string>25000</string>
               </property>
-              <property name="alignment">
-               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-              </property>
               <property name="precisionFromPV" stdset="0">
-               <bool>true</bool>
+               <bool>false</bool>
               </property>
               <property name="channel" stdset="0">
                <string>ca://${line_arbiter_prefix}eVRangeCnst_RBV.[10:10]</string>
-              </property>
-              <property name="displayFormat" stdset="0">
-               <enum>PyDMLabel::Decimal</enum>
               </property>
              </widget>
             </item>
@@ -633,29 +585,21 @@
               </property>
               <property name="font">
                <font>
+                <family>Arial</family>
                 <pointsize>8</pointsize>
                </font>
               </property>
               <property name="toolTip">
                <string/>
               </property>
-              <property name="styleSheet">
-               <string notr="true">border: 1px solid black;</string>
-              </property>
               <property name="text">
                <string>25000</string>
               </property>
-              <property name="alignment">
-               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-              </property>
               <property name="precisionFromPV" stdset="0">
-               <bool>true</bool>
+               <bool>false</bool>
               </property>
               <property name="channel" stdset="0">
                <string>ca://${line_arbiter_prefix}eVRangeCnst_RBV.[9:9]</string>
-              </property>
-              <property name="displayFormat" stdset="0">
-               <enum>PyDMLabel::Decimal</enum>
               </property>
              </widget>
             </item>
@@ -666,29 +610,21 @@
               </property>
               <property name="font">
                <font>
+                <family>Arial</family>
                 <pointsize>8</pointsize>
                </font>
               </property>
               <property name="toolTip">
                <string/>
               </property>
-              <property name="styleSheet">
-               <string notr="true">border: 1px solid black;</string>
-              </property>
               <property name="text">
                <string>25000</string>
               </property>
-              <property name="alignment">
-               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-              </property>
               <property name="precisionFromPV" stdset="0">
-               <bool>true</bool>
+               <bool>false</bool>
               </property>
               <property name="channel" stdset="0">
                <string>ca://${line_arbiter_prefix}eVRangeCnst_RBV.[8:8]</string>
-              </property>
-              <property name="displayFormat" stdset="0">
-               <enum>PyDMLabel::Decimal</enum>
               </property>
              </widget>
             </item>
@@ -699,29 +635,21 @@
               </property>
               <property name="font">
                <font>
+                <family>Arial</family>
                 <pointsize>8</pointsize>
                </font>
               </property>
               <property name="toolTip">
                <string/>
               </property>
-              <property name="styleSheet">
-               <string notr="true">border: 1px solid black;</string>
-              </property>
               <property name="text">
                <string>25000</string>
               </property>
-              <property name="alignment">
-               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-              </property>
               <property name="precisionFromPV" stdset="0">
-               <bool>true</bool>
+               <bool>false</bool>
               </property>
               <property name="channel" stdset="0">
                <string>ca://${line_arbiter_prefix}eVRangeCnst_RBV.[7:7]</string>
-              </property>
-              <property name="displayFormat" stdset="0">
-               <enum>PyDMLabel::Decimal</enum>
               </property>
              </widget>
             </item>
@@ -732,29 +660,21 @@
               </property>
               <property name="font">
                <font>
+                <family>Arial</family>
                 <pointsize>8</pointsize>
                </font>
               </property>
               <property name="toolTip">
                <string/>
               </property>
-              <property name="styleSheet">
-               <string notr="true">border: 1px solid black;</string>
-              </property>
               <property name="text">
                <string>25000</string>
               </property>
-              <property name="alignment">
-               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-              </property>
               <property name="precisionFromPV" stdset="0">
-               <bool>true</bool>
+               <bool>false</bool>
               </property>
               <property name="channel" stdset="0">
                <string>ca://${line_arbiter_prefix}eVRangeCnst_RBV.[6:6]</string>
-              </property>
-              <property name="displayFormat" stdset="0">
-               <enum>PyDMLabel::Decimal</enum>
               </property>
              </widget>
             </item>
@@ -765,29 +685,21 @@
               </property>
               <property name="font">
                <font>
+                <family>Arial</family>
                 <pointsize>8</pointsize>
                </font>
               </property>
               <property name="toolTip">
                <string/>
               </property>
-              <property name="styleSheet">
-               <string notr="true">border: 1px solid black;</string>
-              </property>
               <property name="text">
                <string>25000</string>
               </property>
-              <property name="alignment">
-               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-              </property>
               <property name="precisionFromPV" stdset="0">
-               <bool>true</bool>
+               <bool>false</bool>
               </property>
               <property name="channel" stdset="0">
                <string>ca://${line_arbiter_prefix}eVRangeCnst_RBV.[5:5]</string>
-              </property>
-              <property name="displayFormat" stdset="0">
-               <enum>PyDMLabel::Decimal</enum>
               </property>
              </widget>
             </item>
@@ -798,29 +710,21 @@
               </property>
               <property name="font">
                <font>
+                <family>Arial</family>
                 <pointsize>8</pointsize>
                </font>
               </property>
               <property name="toolTip">
                <string/>
               </property>
-              <property name="styleSheet">
-               <string notr="true">border: 1px solid black;</string>
-              </property>
               <property name="text">
                <string>25000</string>
               </property>
-              <property name="alignment">
-               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-              </property>
               <property name="precisionFromPV" stdset="0">
-               <bool>true</bool>
+               <bool>false</bool>
               </property>
               <property name="channel" stdset="0">
                <string>ca://${line_arbiter_prefix}eVRangeCnst_RBV.[4:4]</string>
-              </property>
-              <property name="displayFormat" stdset="0">
-               <enum>PyDMLabel::Decimal</enum>
               </property>
              </widget>
             </item>
@@ -831,29 +735,21 @@
               </property>
               <property name="font">
                <font>
+                <family>Arial</family>
                 <pointsize>8</pointsize>
                </font>
               </property>
               <property name="toolTip">
                <string/>
               </property>
-              <property name="styleSheet">
-               <string notr="true">border: 1px solid black;</string>
-              </property>
               <property name="text">
                <string>25000</string>
               </property>
-              <property name="alignment">
-               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-              </property>
               <property name="precisionFromPV" stdset="0">
-               <bool>true</bool>
+               <bool>false</bool>
               </property>
               <property name="channel" stdset="0">
                <string>ca://${line_arbiter_prefix}eVRangeCnst_RBV.[3:3]</string>
-              </property>
-              <property name="displayFormat" stdset="0">
-               <enum>PyDMLabel::Decimal</enum>
               </property>
              </widget>
             </item>
@@ -864,29 +760,21 @@
               </property>
               <property name="font">
                <font>
+                <family>Arial</family>
                 <pointsize>8</pointsize>
                </font>
               </property>
               <property name="toolTip">
                <string/>
               </property>
-              <property name="styleSheet">
-               <string notr="true">border: 1px solid black;</string>
-              </property>
               <property name="text">
                <string>25000</string>
               </property>
-              <property name="alignment">
-               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-              </property>
               <property name="precisionFromPV" stdset="0">
-               <bool>true</bool>
+               <bool>false</bool>
               </property>
               <property name="channel" stdset="0">
                <string>ca://${line_arbiter_prefix}eVRangeCnst_RBV.[2:2]</string>
-              </property>
-              <property name="displayFormat" stdset="0">
-               <enum>PyDMLabel::Decimal</enum>
               </property>
              </widget>
             </item>
@@ -897,29 +785,21 @@
               </property>
               <property name="font">
                <font>
+                <family>Arial</family>
                 <pointsize>8</pointsize>
                </font>
               </property>
               <property name="toolTip">
                <string/>
               </property>
-              <property name="styleSheet">
-               <string notr="true">border: 1px solid black;</string>
-              </property>
               <property name="text">
                <string>25000</string>
               </property>
-              <property name="alignment">
-               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-              </property>
               <property name="precisionFromPV" stdset="0">
-               <bool>true</bool>
+               <bool>false</bool>
               </property>
               <property name="channel" stdset="0">
                <string>ca://${line_arbiter_prefix}eVRangeCnst_RBV.[1:1]</string>
-              </property>
-              <property name="displayFormat" stdset="0">
-               <enum>PyDMLabel::Decimal</enum>
               </property>
              </widget>
             </item>
@@ -930,29 +810,21 @@
               </property>
               <property name="font">
                <font>
+                <family>Arial</family>
                 <pointsize>8</pointsize>
                </font>
               </property>
               <property name="toolTip">
                <string/>
               </property>
-              <property name="styleSheet">
-               <string notr="true">border: 1px solid black;</string>
-              </property>
               <property name="text">
                <string>25000</string>
               </property>
-              <property name="alignment">
-               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-              </property>
               <property name="precisionFromPV" stdset="0">
-               <bool>true</bool>
+               <bool>false</bool>
               </property>
               <property name="channel" stdset="0">
                <string>ca://${line_arbiter_prefix}eVRangeCnst_RBV.[0:0]</string>
-              </property>
-              <property name="displayFormat" stdset="0">
-               <enum>PyDMLabel::Decimal</enum>
               </property>
              </widget>
             </item>

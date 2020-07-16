@@ -6,24 +6,6 @@ from pydm import Display
 from pydm.widgets import PyDMLabel
 
 
-class VerticalLabel(PyDMLabel):
-    def minimumSizeHint(self):
-        s = QtWidgets.QLabel.minimumSizeHint(self)
-        return QtCore.QSize(s.height(), s.width())
-
-    def sizeHint(self):
-        s = QtWidgets.QLabel.sizeHint(self)
-        return QtCore.QSize(s.height(), s.width())
-
-    def paintEvent(self, ev):
-        painter = QtGui.QPainter(self)
-        painter.setPen(QtCore.Qt.black)
-        painter.setBrush(QtCore.Qt.Dense1Pattern)
-        painter.translate(self.sizeHint().width(), self.sizeHint().height())
-        painter.rotate(270)
-        painter.drawText(0, 0, self.text())
-
-
 def morph_into_vertical(label):
     def minimumSizeHint(*args, **kwargs):
         s = QtWidgets.QLabel.minimumSizeHint(label)
@@ -35,11 +17,8 @@ def morph_into_vertical(label):
 
     def paintEvent(*args, **kwargs):
         painter = QtGui.QPainter(label)
-        painter.setPen(QtCore.Qt.black)
-        painter.setBrush(QtCore.Qt.Dense1Pattern)
         painter.translate(label.sizeHint().width(), label.sizeHint().height())
         painter.rotate(270)
-        print("Redrawing for label: ", label.objectName())
         painter.drawText(0, 0, label.text())
 
     label.minimumSizeHint = minimumSizeHint
@@ -90,7 +69,6 @@ class PMPS(Display):
         for l_idx in labels:
             l = self.findChild(PyDMLabel, "PyDMLabel_{}".format(l_idx))
             if l is not None:
-                print("L is not None: ", l)
                 morph_into_vertical(l)
 
     def setup_tabs(self):
