@@ -109,4 +109,4 @@ class PMPS(Display):
             webbrowser.open(url, new=2, autoraise=True)
 
     def ui_filename(self):
-        return 'main.ui'
+        return 'pmps.ui'
