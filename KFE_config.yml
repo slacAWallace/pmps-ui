@@ -10,6 +10,35 @@ fastfaults:
     ff_start: 1
     ff_end: 50
 
+  - prefix: "PLC:KFE:GATT:"
+    ffo_start: 1
+    ffo_end: 1
+    ff_start: 1
+    ff_end: 50
+
+  - prefix: "PLC:KFE:VAC:K0:"
+    ffo_start: 1
+    ffo_end: 2
+    ff_start: 1
+    ff_end: 50
+
+  - prefix: "PLC:TMO:VAC:"
+    ffo_start: 1
+    ffo_end: 1
+    ff_start: 1
+    ff_end: 50
+
+  - prefix: "PLC:TMO:OPTICS:"
+    ffo_start: 1
+    ffo_end: 1
+    ff_start: 1
+    ff_end: 50
+
+  - prefix: "PLC:KFE:MOTION:"
+    ffo_start: 1
+    ffo_end: 2
+    ff_start: 1
+    ff_end: 50
 
 preemptive_requests:
   - prefix: "PMPS:KFE:"
