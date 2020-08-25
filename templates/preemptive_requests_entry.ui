@@ -323,7 +323,7 @@
       <string/>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${P}${ARBITER}:AP:Entry:${POOL}:Valid_RBV</string>
+      <string>ca://${P}${ARBITER}:AP:Entry:${POOL}:Live_RBV</string>
      </property>
      <property name="showLabels" stdset="0">
       <bool>false</bool>
