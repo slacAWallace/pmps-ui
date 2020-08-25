@@ -37,6 +37,14 @@ class PreemptiveRequests(Display):
                 macros = dict(index=count, P=prefix, ARBITER=arbiter, POOL=pool)
                 widget = PyDMEmbeddedDisplay(parent=reqs_container)
                 widget.macros = json.dumps(macros)
+                channel = f'ca://{prefix}{arbiter}:AP:Entry:{pool}:Live_RBV'
+                rule = {
+                    "name": "PR_Visibility",
+                    "property": "Visible",
+                    "channels": [dict(channel=channel, trigger=True)],
+                    "expression": "ch[0] == 1"
+                }
+                widget.rules = json.dumps([rule])
                 widget.filename = template
                 widget.disconnectWhenHidden = False
                 reqs_container.layout().addWidget(widget)
