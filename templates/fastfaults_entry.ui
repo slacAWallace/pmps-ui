@@ -104,10 +104,7 @@
     </widget>
    </item>
    <item>
-    <widget class="PyDMLabel" name="PyDMLabel_4">
-     <property name="enabled">
-      <bool>true</bool>
-     </property>
+    <widget class="QScrollArea" name="scrollArea">
      <property name="minimumSize">
       <size>
        <width>350</width>
@@ -120,31 +117,83 @@
        <height>16777215</height>
       </size>
      </property>
-     <property name="toolTip">
-      <string/>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
      </property>
-     <property name="textFormat">
-      <enum>Qt::AutoText</enum>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
      </property>
-     <property name="wordWrap">
+     <property name="widgetResizable">
       <bool>true</bool>
      </property>
-     <property name="textInteractionFlags">
-      <set>Qt::TextSelectableByMouse</set>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://${P}FFO:${FFO}:FF:${FF}:Info:Path_RBV</string>
-     </property>
-     <property name="displayFormat" stdset="0">
-      <enum>PyDMLabel::String</enum>
-     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>350</width>
+        <height>44</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="PyDMLabel" name="PyDMLabel_4">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>350</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>350</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::AutoText</enum>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+         <property name="textInteractionFlags">
+          <set>Qt::TextSelectableByMouse</set>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${P}FFO:${FFO}:FF:${FF}:Info:Path_RBV</string>
+         </property>
+         <property name="displayFormat" stdset="0">
+          <enum>PyDMLabel::String</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
     </widget>
    </item>
    <item>
-    <widget class="PyDMLabel" name="PyDMLabel_5">
-     <property name="enabled">
-      <bool>true</bool>
-     </property>
+    <widget class="QScrollArea" name="scrollArea_2">
      <property name="minimumSize">
       <size>
        <width>250</width>
@@ -153,25 +202,80 @@
      </property>
      <property name="maximumSize">
       <size>
-       <width>150</width>
+       <width>250</width>
        <height>16777215</height>
       </size>
      </property>
-     <property name="toolTip">
-      <string/>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
      </property>
-     <property name="wordWrap">
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
+     </property>
+     <property name="widgetResizable">
       <bool>true</bool>
      </property>
-     <property name="textInteractionFlags">
-      <set>Qt::TextSelectableByMouse</set>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://${P}FFO:${FFO}:FF:${FF}:Info:Desc_RBV</string>
-     </property>
-     <property name="displayFormat" stdset="0">
-      <enum>PyDMLabel::String</enum>
-     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>250</width>
+        <height>44</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="PyDMLabel" name="PyDMLabel_5">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>250</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>250</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+         <property name="textInteractionFlags">
+          <set>Qt::TextSelectableByMouse</set>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${P}FFO:${FFO}:FF:${FF}:Info:Desc_RBV</string>
+         </property>
+         <property name="displayFormat" stdset="0">
+          <enum>PyDMLabel::String</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
     </widget>
    </item>
    <item>
